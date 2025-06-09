@@ -4,5 +4,6 @@
     @include('partials.indicators')
     @include('partials.fire-alert')
     @include('partials.what-we-do')
+    @include('partials.latest-news')
     @include('partials.footer')
 </di>

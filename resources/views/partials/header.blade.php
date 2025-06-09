@@ -34,7 +34,7 @@
             <li><a href="#" class="hover:text-red-600">Serviços</a></li>
             <li><a href="#" class="hover:text-red-600">Comunicação</a></li>
             <li><a href="#" class="hover:text-red-600">Documentos</a></li>
-            <li><a href="#" class="hover:text-red-600">Contactos</a></li>
+            <li><a href="#" class="hover:text-red-600">Contatos</a></li>
         </ul>
 
         {{-- Pesquisa --}}

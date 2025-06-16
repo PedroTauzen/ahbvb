@@ -19,9 +19,6 @@ Route::middleware(['auth'])->group(function () {
     Volt::route('settings/appearance', 'settings.appearance')->name('settings.appearance');
 });
 
-Route::view('/associacao/historia', 'associacao.historia');
-Route::view('/associacao/estatutos', 'associacao.estatutos');
-Route::view('/associacao/orgaos', 'associacao.orgaos');
-Route::view('/associacao/documentos', 'associacao.documentos');
+Route::view('/associacao', 'associacao.index');
 
 require __DIR__ . '/auth.php';

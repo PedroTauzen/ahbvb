@@ -29,15 +29,23 @@
         {{-- Menu principal --}}
         <ul id="menu" class="hidden lg:flex gap-6 text-sm font-medium items-center relative">
 
-            <li><a href="/" class="text-red-600 font-bold border-b-2 border-red-600">Início</a></li>
+            <li>
+                <a href="/"
+                    class="{{ request()->is('/') ? 'text-red-600 font-bold border-b-2 border-red-600' : 'hover:text-red-600' }}">
+                    Início
+                </a>
+            </li>
 
             <li class="relative group">
-                <a href="#" class="hover:text-red-600">Associação</a>
+                <a href="/associacao"
+                    class="{{ request()->is('associacao*') ? 'text-red-600 font-bold border-b-2 border-red-600' : 'hover:text-red-600' }}">
+                    Associação
+                </a>
                 <ul class="absolute hidden group-hover:block bg-white text-left shadow-lg py-2 rounded w-48 z-50">
-                    <li><a href="/associacao/historia" class="block px-4 py-2 text-sm hover:bg-red-50">História</a></li>
-                    <li><a href="/associacao/estatutos" class="block px-4 py-2 text-sm hover:bg-red-50">Estatutos</a></li>
-                    <li><a href="/associacao/orgaos" class="block px-4 py-2 text-sm hover:bg-red-50">Órgãos Sociais</a></li>
-                    <li><a href="/associacao/documentos" class="block px-4 py-2 text-sm hover:bg-red-50">Documentos</a></li>
+                    <li><a href="/associacao#historia" class="block px-4 py-2 text-sm hover:bg-red-50">História</a></li>
+                    <li><a href="/associacao#estatutos" class="block px-4 py-2 text-sm hover:bg-red-50">Estatutos</a></li>
+                    <li><a href="/associacao#orgaos" class="block px-4 py-2 text-sm hover:bg-red-50">Órgãos Sociais</a></li>
+                    <li><a href="/associacao#documentos" class="block px-4 py-2 text-sm hover:bg-red-50">Documentos</a></li>
                 </ul>
             </li>
 

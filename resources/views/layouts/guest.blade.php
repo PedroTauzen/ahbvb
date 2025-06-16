@@ -14,12 +14,18 @@
     @include('partials.header')
 
     <main>
+        @hasSection('page-title')
+        @yield('page-title')
+        @endif
+
         @hasSection('content')
         @yield('content')
         @else
         {{ $slot ?? '' }}
         @endif
     </main>
+
+    @include('partials.footer')
 
 </body>
 

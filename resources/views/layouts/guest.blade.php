@@ -14,8 +14,13 @@
     @include('partials.header')
 
     <main>
-        {{ $slot }}
+        @hasSection('content')
+        @yield('content')
+        @else
+        {{ $slot ?? '' }}
+        @endif
     </main>
+
 </body>
 
 </html>

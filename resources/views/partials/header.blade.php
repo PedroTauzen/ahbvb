@@ -37,13 +37,16 @@
             </li>
 
             <li class="relative group">
-                <a href="/associacao"
+                <a href="/associacao#sobre"
                     class="{{ request()->is('associacao*') ? 'text-red-600 font-bold border-b-2 border-red-600' : 'hover:text-red-600' }}">
                     Associação
                 </a>
-                <ul class="absolute hidden group-hover:block bg-white text-left shadow-lg py-2 rounded w-48 z-50">
+                <ul class="absolute hidden group-hover:block bg-white text-left shadow-lg py-2 rounded w-56 z-50">
+                    <li><a href="/associacao#sobre" class="block px-4 py-2 text-sm hover:bg-red-50">Sobre a Associação</a></li>
                     <li><a href="/associacao#historia" class="block px-4 py-2 text-sm hover:bg-red-50">História</a></li>
-                    <li><a href="/associacao#estatutos" class="block px-4 py-2 text-sm hover:bg-red-50">Estatutos</a></li>
+                    <li><a href="/associacao#caracterizacao" class="block px-4 py-2 text-sm hover:bg-red-50">Caracterização</a></li>
+                    <li><a href="/associacao#atividades" class="block px-4 py-2 text-sm hover:bg-red-50">Atividades</a></li>
+                    <li><a href="/associacao#instalacoes" class="block px-4 py-2 text-sm hover:bg-red-50">Instalações</a></li>
                     <li><a href="/associacao#orgaos" class="block px-4 py-2 text-sm hover:bg-red-50">Órgãos Sociais</a></li>
                     <li><a href="/associacao#documentos" class="block px-4 py-2 text-sm hover:bg-red-50">Documentos</a></li>
                 </ul>

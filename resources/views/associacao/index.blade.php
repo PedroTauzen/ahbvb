@@ -9,35 +9,22 @@
 @endsection
 
 @section('content')
-<section id="historia" class="max-w-4xl mx-auto px-4 py-16">
-    <h1 class="text-3xl font-bold mb-6">História</h1>
-    <p>
-        Fundada com o propósito de servir a comunidade de Beja, a Associação Humanitária dos Bombeiros Voluntários tem desempenhado um papel vital ao longo dos anos no combate a incêndios, apoio a vítimas e formação cívica.
+<section id="sobre" class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-red-700 mb-6">Sobre a Associação</h2>
+    <p class="mb-4">
+        A <strong>Associação Humanitária dos Bombeiros Voluntários de Beja</strong> é uma Pessoa Coletiva de Utilidade Pública,
+        fundada a <strong>12 de maio de 1889</strong>, com sede na Avenida Fialho de Almeida, nº 30, em Beja.
     </p>
+    <p class="mb-4">
+        Suporta jurídica e financeiramente o <strong>Corpo de Bombeiros</strong>, estando ao serviço da comunidade nas áreas de
+        socorro, combate a incêndios, acidentes, e prestação de apoio social e de saúde.
+    </p>
+    <p class="mb-4">
+        A sua ação vai além da emergência, promovendo o <strong>voluntariado, o associativismo e a solidariedade</strong> através de iniciativas
+        culturais, desportivas e sociais.
+    </p>
+    <p class="text-sm text-gray-600 italic">“Vida por Vida” — Um lema que se vive, não apenas se diz.</p>
 </section>
 
-<section id="estatutos" class="max-w-4xl mx-auto px-4 py-16 bg-gray-50">
-    <h1 class="text-3xl font-bold mb-6">Estatutos</h1>
-    <p>Consulte os nossos estatutos através do link abaixo:</p>
-    <a href="/documentos/estatutos.pdf" target="_blank" class="text-red-600 underline mt-4 inline-block">
-        Estatutos da AHBVB (PDF)
-    </a>
-</section>
 
-<section id="orgaos" class="max-w-4xl mx-auto px-4 py-16">
-    <h1 class="text-3xl font-bold mb-6">Órgãos Sociais</h1>
-    <ul class="list-disc pl-5 space-y-2">
-        <li><strong>Direção:</strong> João Exemplo (Presidente), Ana Apoio (Secretária), ...</li>
-        <li><strong>Assembleia Geral:</strong> Manuel Silva (Presidente), ...</li>
-        <li><strong>Conselho Fiscal:</strong> Carla Sousa (Presidente), ...</li>
-    </ul>
-</section>
-
-<section id="documentos" class="max-w-4xl mx-auto px-4 py-16 bg-gray-50">
-    <h1 class="text-3xl font-bold mb-6">Documentos</h1>
-    <ul class="space-y-2">
-        <li><a href="/documentos/relatorio2023.pdf" target="_blank" class="text-red-600 underline">Relatório de Atividades 2023</a></li>
-        <li><a href="/documentos/contas2023.pdf" target="_blank" class="text-red-600 underline">Contas 2023</a></li>
-    </ul>
-</section>
 @endsection

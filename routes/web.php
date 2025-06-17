@@ -20,5 +20,6 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::view('/associacao', 'associacao.index');
+Route::view('/bombeiros', 'bombeiros.index')->name('bombeiros');
 
 require __DIR__ . '/auth.php';

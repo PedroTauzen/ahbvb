@@ -39,4 +39,49 @@
         “Vida por Vida” — mais do que um lema, um compromisso com a população.
     </p>
 </section>
+
+<section id="quadro" class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-red-700 mb-10">Quadro do Pessoal</h2>
+
+    {{-- Quadro de Comando --}}
+    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Quadro de Comando</h3>
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Comandante', 'foto' => 'comandante.jpg'])
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => '2.º Comandante', 'foto' => '2comandante.jpg'])
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Adjunto de Comando', 'foto' => 'adjunto.jpg'])
+    </div>
+
+    {{-- Carreira de Oficial Bombeiro --}}
+    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Oficiais Bombeiros</h3>
+    <div class="grid md:grid-cols-4 gap-6 mb-12">
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Oficial Superior', 'foto' => 'oficial-superior.jpg'])
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Oficial Principal', 'foto' => 'oficial-principal.jpg'])
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Oficial 1.ª', 'foto' => 'oficial-1.jpg'])
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Oficial 2.ª', 'foto' => 'oficial-2.jpg'])
+    </div>
+
+    {{-- Carreira de Bombeiros --}}
+    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Bombeiros do Quadro Ativo</h3>
+    <div class="grid md:grid-cols-4 gap-6 mb-12">
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Chefe', 'foto' => 'chefe.jpg'])
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Subchefe', 'foto' => 'subchefe.jpg'])
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Bombeiro 1.ª', 'foto' => 'bombeiro-1.jpg'])
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Bombeiro 2.ª', 'foto' => 'bombeiro-2.jpg'])
+    </div>
+
+    {{-- Cadetes e Infantes --}}
+    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Escola de Cadetes e Infantes</h3>
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Cadete', 'foto' => 'cadete.jpg'])
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Infante', 'foto' => 'infante.jpg'])
+    </div>
+
+    {{-- Quadro de Reserva e Honra --}}
+    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Quadros de Honra e Reserva</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Comandante (Honra)', 'foto' => 'honra.jpg'])
+        @include('bombeiros.partials.pessoa', ['nome' => 'Nome', 'cargo' => 'Chefe (Reserva)', 'foto' => 'reserva.jpg'])
+    </div>
+</section>
+
 @endsection

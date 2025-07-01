@@ -268,4 +268,21 @@
         * Os documentos estão disponíveis em formato PDF. Caso tenha dificuldades no acesso, entre em contacto com a Associação.
     </p>
 </section>
+
+@foreach ($secoes as $secao)
+<section class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold text-red-700 mb-4">{{ $secao->titulo }}</h2>
+
+    @if($secao->imagem)
+    <img src="{{ Storage::url($secao->imagem) }}" alt="Imagem da secao" class="rounded-xl shadow-md mb-4">
+    @endif
+
+    <div class="prose max-w-none">
+        {!! Str::markdown($secao->descricao) !!}
+    </div>
+
+</section>
+@endforeach
+
+
 @endsection
